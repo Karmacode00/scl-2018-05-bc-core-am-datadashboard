@@ -6,6 +6,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container"> <!-- Inicio container general -->
+      <div class="row"><!-- Primer row -->
+        <div class="col-12">
+          <h1 class="titulo">Data Dashboard LMS</h1>
+        </div>
+      </div><!-- Fin primer row -->
+    
+      <div class="row"><!-- Inicio segundo row -->
+        <div class="col-4 primera_seccion">
+          <!-- Menús seleccionables -->
+            <div class="custom-select">
+                <select>
+                  <option value="0">Selecciona Sede</option>
+                  <option value="1">Lima</option>
+                  <option value="2">Santiago</option>
+                  <option value="3">Sao Paulo</option>
+                  <option value="4"></option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select>
+                  <option value="0">Selecciona Generación</option>
+                  <option value="1">2018</option>
+                  <option value="2">2017</option>
+                  <option value="3">2016</option>
+                  <option value="4"></option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select>
+                  <option value="0">Selecciona Sección</option>
+                  <option value="1">Core AM</option>
+                  <option value="2">Core PM</option>
+                  <option value="3">Especialización UX</option>
+                  <option value="4">Especialización FrontEnd</option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select>
+                  <option value="0">Selecciona Alumna</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                </select>
+              </div>            
+          <!-- Botón para buscar -->
+          <button  class="custom-select" id="button-encrypt" type="button" value="buscar">Buscar</button>
+        </div>
+        <div class="col-8 primera_seccion">
+          <!-- Pantalla de muestra de los datos -->
+          <div>
+              <img src='../src/img/default.jpg'>
+          </div>
+        </div>
+      </div><!-- Fin segundo row -->
+    </div><!-- Fin container -->
     <script src="main.js"></script>
   </body>
 </html>
