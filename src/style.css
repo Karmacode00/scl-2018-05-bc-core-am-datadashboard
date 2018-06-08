@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 0px;
+  background-color: #FFE521;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container { 
   width: 100%;
   max-width: 1200px;
-  margin: 5px auto;
+  margin: 0px auto;
 }
 
 .row:before, .row:after {
@@ -24,11 +26,27 @@
   padding: 12px;
   float: left;
   border: 1px solid black;
+  background-color: white;
 }
 
 .custom-select {
-  width:200px;
+  width: 100%;
+  height: 30%;
+  background-color: white;
 }
+
+.button-search {
+  width: 10%;
+}
+
+img {
+  width: 100%  /*  Para que las imagenes ocupen el 100% de su elemento padre */  
+}
+
+h1 {
+  font-size: 60px;
+}
+
 .col-1 {
   /* (1/12) x 100 */
   width: 8.333333333%;

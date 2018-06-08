@@ -3,20 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
     <div class="container"> <!-- Inicio container general -->
       <div class="row"><!-- Primer row -->
-        <div class="col-12">
-          <h1 class="titulo">Data Dashboard LMS</h1>
+        <div class="col-2">
+          <img src='../src/img/logotipo.jpg'>
+        </div>
+        <div class="col-10">
+          <h1 class="titulo">LMS Data Dashboard</h1>
         </div>
       </div><!-- Fin primer row -->
     
       <div class="row"><!-- Inicio segundo row -->
         <div class="col-4 primera_seccion">
+          <p>Filtrar por:</p>
           <!-- Menús seleccionables -->
             <div class="custom-select">
+                <p>Sede:</p>
                 <select>
                   <option value="0">Selecciona Sede</option>
                   <option value="1">Lima</option>
@@ -26,8 +32,9 @@
                 </select>
               </div>
               <div class="custom-select">
+                <p>Cohort:</p>
                 <select>
-                  <option value="0">Selecciona Generación</option>
+                  <option value="0">Selecciona Cohort</option>
                   <option value="1">2018</option>
                   <option value="2">2017</option>
                   <option value="3">2016</option>
@@ -35,6 +42,7 @@
                 </select>
               </div>
               <div class="custom-select">
+                <p>Sección:</p>
                 <select>
                   <option value="0">Selecciona Sección</option>
                   <option value="1">Core AM</option>
@@ -44,6 +52,7 @@
                 </select>
               </div>
               <div class="custom-select">
+                <p>Alumna:</p>
                 <select>
                   <option value="0">Selecciona Alumna</option>
                   <option value="1"></option>
@@ -60,7 +69,7 @@
                 </select>
               </div>            
           <!-- Botón para buscar -->
-          <button  class="custom-select" id="button-encrypt" type="button" value="buscar">Buscar</button>
+          <button  class="custom-select" id="button-search" type="button" value="buscar">Buscar</button>
         </div>
         <div class="col-8 primera_seccion">
           <!-- Pantalla de muestra de los datos -->
