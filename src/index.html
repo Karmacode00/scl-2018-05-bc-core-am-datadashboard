@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container"> <!-- Inicio container general -->
-      <div class="row"><!-- Primer row -->
-        <div class="col-2">
-          <img src='../src/img/logotipo.jpg'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Dashboard</title>
+  <link rel="stylesheet" href="grid.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Inicio container general -->
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-3">
+          <img id="isotipo" src="img/isotipo_laboratoria.png" alt="isotipo de laboratoria"
+   
+        <div class="col-9">
+          <h1 class="titulo">Data Dashboard LMS</h1>
         </div>
-        <div class="col-10">
-          <h1 class="titulo">LMS Data Dashboard</h1>
-        </div>
-      </div><!-- Fin primer row -->
-    
-      <div class="row"><!-- Inicio segundo row -->
-        <div class="col-4 primera_seccion">
-          <p>Filtrar por:</p>
-          <!-- Menús seleccionables -->
-            <div class="custom-select">
-                <p>Sede:</p>
-                <select>
-                  <option value="0">Selecciona Sede</option>
-                  <option value="1">Lima</option>
-                  <option value="2">Santiago</option>
-                  <option value="3">Sao Paulo</option>
-                  <option value="4"></option>
-                </select>
-              </div>
-              <div class="custom-select">
-                <p>Cohort:</p>
-                <select>
-                  <option value="0">Selecciona Cohort</option>
-                  <option value="1">2018</option>
-                  <option value="2">2017</option>
-                  <option value="3">2016</option>
-                  <option value="4"></option>
-                </select>
-              </div>
-              <div class="custom-select">
-                <p>Sección:</p>
-                <select>
-                  <option value="0">Selecciona Sección</option>
-                  <option value="1">Core AM</option>
-                  <option value="2">Core PM</option>
-                  <option value="3">Especialización UX</option>
-                  <option value="4">Especialización FrontEnd</option>
-                </select>
-              </div>
-              <div class="custom-select">
-                <p>Alumna:</p>
-                <select>
-                  <option value="0">Selecciona Alumna</option>
-                  <option value="1"></option>
-                  <option value="2"></option>
-                  <option value="3"></option>
-                  <option value="4"></option>
-                  <option value="5"></option>
-                  <option value="6"></option>
-                  <option value="7"></option>
-                  <option value="8"></option>
-                  <option value="9"></option>
-                  <option value="10"></option>
-                  
-                </select>
-              </div>            
-          <!-- Botón para buscar -->
-          <button  class="custom-select" id="button-search" type="button" value="buscar">Buscar</button>
-        </div>
-        <div class="col-8 primera_seccion">
-          <!-- Pantalla de muestra de los datos -->
-          <div>
-              <img src='../src/img/default.jpg'>
-          </div>
-        </div>
-      </div><!-- Fin segundo row -->
-    </div><!-- Fin container -->
-    <script src="main.js"></script>
-  </body>
+      </div>
+  </div>
+  </header>
+  <!-- segundo row -->
+
+  <div class="container"></div>
+  <div class="row">
+    <!-- Inicio segundo row -->
+    <div class="col-3 primera_seccion_izq">
+      <!-- Menús seleccionables -->
+      <div class="custom-select">
+        <select>
+          <option value="0">Selecciona Sede</option>
+          <option value="1">Lima</option>
+          <option value="2">Santiago</option>
+          <option value="3">Sao Paulo</option>
+          <option value="4"></option>
+        </select>
+      </div>
+      <div class="custom-select">
+        <select>
+          <option value="0">Selecciona cohort</option>
+          <option value="1">2018</option>
+          <option value="2">2017</option>
+          <option value="3">2016</option>
+          <option value="4"></option>
+        </select>
+      </div>
+      <div class="custom-select">
+        <select>
+          <option value="0">Selecciona Sección</option>
+          <option value="1">Core AM</option>
+          <option value="2">Core PM</option>
+          <option value="3">Especialización UX</option>
+          <option value="4">Especialización FrontEnd</option>
+        </select>
+      </div>
+      <div class="custom-select">
+        <select>
+          <option value="0">Selecciona Alumna</option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+          <option value="9"></option>
+          <option value="10"></option>
+
+        </select>
+      </div>
+      <!-- Botón para buscar -->
+      <button id="button_search" type="button" value="buscar">Buscar</button>
+    </div>
+    <div class="col-9">
+      <!-- Pantalla de muestra de los datos -->
+      <img id="data" src='../src/img/susana_horia.jpg'>
+    </div>
+  </div>
+  </div>
+  <!-- Fin container -->
+  <script src="main.js"></script>
+</body>
+
 </html>
