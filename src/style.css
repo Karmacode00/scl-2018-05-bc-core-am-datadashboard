@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  padding: 0%;
+  width: 100%;
+
+}
+.custom-select {
+  width: 100%;
+  height: 30%;
+  background-color: #FFE521;
+  padding: 8%;
+  
+}
+#button_search {
+  width: 20%;
+  padding: 2%;
+  margin: 8% 5% 40%; 
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.button-search {
+  width: 10%;
+}
+
+img {
+  width: 100%; /*  Para que las imagenes ocupen el 100% de su elemento padre */ 
+  height: 50%;
+}
+h1 {
+  font-size: 50px;
+  text-align: left;
+  margin-top: 2%;
+}
+#header {
+  border: none;
+}
+.primera_seccion_izq {
+  background-color: #FFE521;
+}
+
+#isotipo{
+  width: 50%;
+}
+
+#data {
+  width: 100%; /*  Para que las imagenes ocupen el 100% de su elemento padre */ 
+  height: 600px;
+}
+
