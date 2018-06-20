@@ -1,4 +1,4 @@
-window.computeUsersStats = (users, progress, courses) => {//, progress, courses) => {
+window.computeUsersStats = (users, progress, courses) => {
  
 };
 
