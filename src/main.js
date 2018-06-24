@@ -5,6 +5,7 @@ fetch(cohortsJSON) // acá le digo de donde va  a tomar los datos
   .then(response => response.json())
   .then(data => {
     // Dibujamos el grupo de cohorts resultante de forEach
+    // Se construyen los elementos del menú
     let grupoCohorts = `<label for='cohorts_select'>Cohorts</label>
     <select onchange='seleccionarCohorts()' 
     class='form-control' id='cohortSelect'>`; // Evento onchange, damos id
@@ -28,9 +29,9 @@ function seleccionarCohorts() { // Inicio progress (progreso)
       fetch(usersJSON) // acá le digo de donde va  a tomar los datos de user
         .then(response => response.json())
         .then(data => { // aqui recibo los datos de user del JSON
-          // Dibujamos el grupo de alumnas
+          // Grupo de alumnas
           const user = data.filter(user => user.signupCohort === document.getElementById('cohortSelect').value);
-          computeUsersStats(user, progress);
+          computeUsersStats(user, progress); // Linkeo a la función
         });
       // Terminado usuarios
     });

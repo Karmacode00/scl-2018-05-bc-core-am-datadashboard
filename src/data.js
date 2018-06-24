@@ -2,10 +2,13 @@
 window.computeUsersStats = (users, progress) => {
   let tabla = ''; // Tabla para mostrar los datos
   let cont = 0; // Contador
+  // Recorrer a todos los ususarios para obtener sus datos de progreso
+  // id conecta usuarios con progreso
   users.forEach(function(element) {
     cont++;
     const progreso = progress[element.id];
     // Variables para guardar cada dato que se necesita mostrar
+    // También servirán para calcular lo que se pide
     let lecturaCompletado = 0;
     let lecturaNoCompletado = 0;
     let preguntaCompletado = 0;
