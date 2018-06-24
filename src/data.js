@@ -1,10 +1,11 @@
-// let usuarios = [];
+
+let usuarios = [];
 window.computeUsersStats = (users, progress) => {
   let tabla = ''; // Tabla para mostrar los datos
   let cont = 0; // Contador
   // Recorrer a todos los ususarios para obtener sus datos de progreso
   // id conecta usuarios con progreso
-  users.forEach(function (element) {
+  users.forEach(function(element) {
     cont++;
     const progreso = progress[element.id];
     // Variables para guardar cada dato que se necesita mostrar
@@ -103,11 +104,66 @@ window.computeUsersStats = (users, progress) => {
 
 
     // Función de ordenado
-    window.sortUsers = (users, orderBy, orderDirection) => {
-
+    window.ordenar = (tipo, direccion) => {
+      sortUsers(usuarios, tipo, direccion);
     };
 
-    // Función de búsqueda
+    // Ordenamos con metodo burbuja (bubble sort o bubbling event)
+    // Forma de ordenar sacada de internet, mueve los datos 
+    // Ascendente 
+    window.sortUsers = (users, orderBy, orderDirection) => {
+      if (orderBy === 'porcentaje' && orderDirection === 'asc') {
+        for (var i = 1; i < users.length; i++) {
+          for (var j = 0; j < (users.length - i); j++) {
+            if (users[j].porcentaje < users[j + 1].porcentaje) {
+              k = users[j + 1];
+              users[j + 1] = users[j];
+              users[j] = k;
+            }
+          }
+        }
+      }
+    
+      if (orderBy === 'lectura' && orderDirection === 'asc') {
+        for (var i = 1; i < users.length; i++) {
+          for (var j = 0; j < (users.length - i); j++) {
+            if (users[j].lectura < users[j + 1].lectura) {
+              k = users[j + 1];
+              users[j + 1] = users[j];
+              users[j] = k;
+            }
+          }
+        }
+      }
+    
+      if (orderBy === 'quiz' && orderDirection === 'asc') {
+        for (var i = 1; i < users.length; i++) {
+          for (var j = 0; j < (users.length - i); j++) {
+            if (users[j].quiz < users[j + 1].quiz) {
+              k = users[j + 1];
+              users[j + 1] = users[j];
+              users[j] = k;
+            }
+          }
+        }
+      }
+    
+      if (orderBy === 'practica' && orderDirection === 'asc') {
+        for (var i = 1; i < users.length; i++) {
+          for (var j = 0; j < (users.length - i); j++) {
+            if (users[j].practica < users[j + 1].practica) {
+              k = users[j + 1];
+              users[j + 1] = users[j];
+              users[j] = k;
+            }
+          }
+        }
+      }
+    
+      showTable(users);
+    
+    };
+
     window.filterUsers = (users, search) => {
     };
   });
