@@ -102,6 +102,36 @@ window.computeUsersStats = (users, progress) => {
       });
     };
 
+    if (users.length > 0) {
+      showTable(usuarios);
+    } else {
+      let mensaje = `<div class="alert alert-danger" role="alert">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      No se encontraron resultados
+      </div>`
+      document.getElementById("alumnas").innerHTML = mensaje;
+    }
+  });
+  
+  window.showTable = (usuarios) => {
+    let tabla = '';
+    for (var i = 0; i < usuarios.length; i++) {
+      let usuarioTemporal = usuarios[i];
+      tabla += '<tr><td>' + (i + 1) + '</td><td>' + usuarioTemporal.nombre + '</td><td>' + usuarioTemporal.porcentaje + '%</td><td>%' + Math.round(usuarioTemporal.lectura) + '</td><td>%' + Math.round(usuarioTemporal.quiz) + '</td><td>%' + Math.round(usuarioTemporal.practica) + '</td><td>' + Math.round(usuarioTemporal.promedioPuntaje) + '</td></tr>';
+    }
+    document.getElementById("alumnas").innerHTML = tabla;
+  
+  }
+  
+  window.porcentaje_progress = (id, progress) => {
+    try {
+      var progressObj = progress[id];
+      return progressObj.intro.percent;
+    } catch (err) {
+      return 0;
+    }
+  }
 
     // Función de ordenado
     window.ordenar = (tipo, direccion) => {
@@ -160,11 +190,36 @@ window.computeUsersStats = (users, progress) => {
         }
       }
     
-      showTable(users);
-    
+      showTable(users);  
+    }; 
+
+    // Filtrado usuarios (buscar, según la barra)
+    window.filtrar = (filtro) => {
+      console.log(filtro);
+      filterUsers(usuarios, filtro);
     };
 
     window.filterUsers = (users, search) => {
+      let usuariosTemporal = [];
+      let usuariosAux = [];
+      for (var i = 0; i < users.length; i++) {
+        usuariosAux.push(users[i]);
+      }
+      let encontrado = false;
+      for (var i = 0; i < users.length; i++) {
+        let usuarioTemporal = users[i];
+        if (usuarioTemporal.nombre.indexOf(search) > -1) {
+          usuariosTemporal.push(usuarioTemporal);
+          encontrado = true;
+        }
+        
+      }
+      usuarios = usuariosAux;
+      if (encontrado) {
+        showTable(usuariosTemporal);
+      } else {
+        showTable(usuarios);
+      }    
     };
   });
 };

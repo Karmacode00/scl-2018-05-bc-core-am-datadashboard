@@ -6,52 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+
   <title>Dashboard LMS</title>
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="css/dashboard.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- header -->
-  <nav style="background-color:#FFE521 !important" class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <nav style="background-color: #FFE521 !important" class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="logo col-sm-3 col-md-2 mr-0" href="#">
       <img alt="Laboratoria, código que transforma" class="jss198" src="img/logo.svg">
     </a>
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar alumna" aria-label="Search">
-    <!-- decidir si crea un loggin -->
+    <input  id="filtro" class="form-control form-control-dark w-100" onkeyup="filtrar(document.getElementById('filtro').value)" type="text" placeholder="Buscar alumna" aria-label="Search">
+    <!-- decidir si quitar sign out -->
     <ul class="navbar-nav px-3">
       <li class="nav-item text-nowrap">
         <a class="salir nav-link" href="#">Sign out</a>
       </li>
     </ul>
   </nav>
+
   <div class="container-fluid">
     <div class="row">
-      <!-- aside -->
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
+
             <li class="nav-item">
               <a class="nav-link active" href="#">
+
                 <div class="form-group" id="cohorts">
+
                 </div>
               </a>
             </li>
           </ul>
+
+
         </div>
       </nav>
-      <!-- section -->
+
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Dashboard LMS</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
+
           </div>
         </div>
-        <div id="filtros">
-          
-        </div>
+
+
+        
         <h2>Alumnas</h2>
         <div class="table-responsive">
           <table class="table table-striped table-sm">
@@ -59,18 +67,41 @@
               <tr>
                 <th>#</th>
                 <th>Nombre</th>
-                <th>Completitud total</th>
+                <th>
+                  <span onclick="ordenar('porcentaje', 'asc')">v</span>
+                  Completitud total
+                </th>
+                <th>
+                  <span onclick="ordenar('lectura', 'asc')">v</span>
+                  Lectura
+                </th>
+                <th>
+                  <span onclick="ordenar('quiz', 'asc')">v</span>
+                  Quiz
+                </th>
+                <th>
+                  <span onclick="ordenar('practica', 'asc')">v</span>
+                  Práctica
+                </th> 
+                <th>
+                  <span onclick="ordenar('promedio', 'asc')">v</span>
+                  Promedio de Quiz
+                </th>
               </tr>
             </thead>
             <tbody id="alumnas">
+
             </tbody>
           </table>
         </div>
       </main>
     </div>
   </div>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
