@@ -1,8 +1,8 @@
 
 let usuarios = [];
 window.computeUsersStats = (users, progress) => {
-  let tabla = ''; // Tabla para mostrar los datos
-  let cont = 0; // Contador
+  // let tabla = ''; // Tabla para mostrar los datos
+  // let cont = 0; // Contador
   // Recorrer a todos los ususarios para obtener sus datos de progreso
   // id conecta usuarios con progreso
   users.forEach(function(element) {
@@ -109,8 +109,8 @@ window.computeUsersStats = (users, progress) => {
       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
       <span class="sr-only">Error:</span>
       No se encontraron resultados
-      </div>`
-      document.getElementById("alumnas").innerHTML = mensaje;
+      </div>`;
+      document.getElementById('alumnas').innerHTML = mensaje;
     }
   });
   
@@ -120,11 +120,11 @@ window.computeUsersStats = (users, progress) => {
       let usuarioTemporal = usuarios[i];
       tabla += '<tr><td>' + (i + 1) + '</td><td>' + usuarioTemporal.nombre + '</td><td>' + usuarioTemporal.porcentaje + '%</td><td>%' + Math.round(usuarioTemporal.lectura) + '</td><td>%' + Math.round(usuarioTemporal.quiz) + '</td><td>%' + Math.round(usuarioTemporal.practica) + '</td><td>' + Math.round(usuarioTemporal.promedioPuntaje) + '</td></tr>';
     }
-    document.getElementById("alumnas").innerHTML = tabla;
+    document.getElementById('alumnas').innerHTML = tabla;
   
   }
   
-  window.porcentaje_progress = (id, progress) => {
+  window.porcentajeProgress = (id, progress) => {
     try {
       var progressObj = progress[id];
       return progressObj.intro.percent;
@@ -133,93 +133,91 @@ window.computeUsersStats = (users, progress) => {
     }
   }
 
-    // Función de ordenado
-    window.ordenar = (tipo, direccion) => {
-      sortUsers(usuarios, tipo, direccion);
-    };
+  // Función de ordenado
+  window.ordenar = (tipo, direccion) => {
+    sortUsers(usuarios, tipo, direccion);
+  };
 
-    // Ordenamos con metodo burbuja (bubble sort o bubbling event)
-    // Forma de ordenar sacada de internet, mueve los datos 
-    // Ascendente 
-    window.sortUsers = (users, orderBy, orderDirection) => {
-      if (orderBy === 'porcentaje' && orderDirection === 'asc') {
-        for (var i = 1; i < users.length; i++) {
-          for (var j = 0; j < (users.length - i); j++) {
-            if (users[j].porcentaje < users[j + 1].porcentaje) {
-              k = users[j + 1];
-              users[j + 1] = users[j];
-              users[j] = k;
-            }
+  // Ordenamos con metodo burbuja (bubble sort o bubbling event)
+  // Forma de ordenar sacada de internet, mueve los datos 
+  // Ascendente 
+  window.sortUsers = (users, orderBy, orderDirection) => {
+    if (orderBy === 'porcentaje' && orderDirection === 'asc') {
+      for (var i = 1; i < users.length; i++) {
+        for (var j = 0; j < (users.length - i); j++) {
+          if (users[j].porcentaje < users[j + 1].porcentaje) {
+            k = users[j + 1];
+            users[j + 1] = users[j];
+            users[j] = k;
           }
         }
       }
+    }
     
-      if (orderBy === 'lectura' && orderDirection === 'asc') {
-        for (var i = 1; i < users.length; i++) {
-          for (var j = 0; j < (users.length - i); j++) {
-            if (users[j].lectura < users[j + 1].lectura) {
-              k = users[j + 1];
-              users[j + 1] = users[j];
-              users[j] = k;
-            }
+    if (orderBy === 'lectura' && orderDirection === 'asc') {
+      for (var i = 1; i < users.length; i++) {
+        for (var j = 0; j < (users.length - i); j++) {
+          if (users[j].lectura < users[j + 1].lectura) {
+            k = users[j + 1];
+            users[j + 1] = users[j];
+            users[j] = k;
           }
         }
       }
+    }
     
-      if (orderBy === 'quiz' && orderDirection === 'asc') {
-        for (var i = 1; i < users.length; i++) {
-          for (var j = 0; j < (users.length - i); j++) {
-            if (users[j].quiz < users[j + 1].quiz) {
-              k = users[j + 1];
-              users[j + 1] = users[j];
-              users[j] = k;
-            }
+    if (orderBy === 'quiz' && orderDirection === 'asc') {
+      for (var i = 1; i < users.length; i++) {
+        for (var j = 0; j < (users.length - i); j++) {
+          if (users[j].quiz < users[j + 1].quiz) {
+            k = users[j + 1];
+            users[j + 1] = users[j];
+            users[j] = k;
           }
         }
       }
+    }
     
-      if (orderBy === 'practica' && orderDirection === 'asc') {
-        for (var i = 1; i < users.length; i++) {
-          for (var j = 0; j < (users.length - i); j++) {
-            if (users[j].practica < users[j + 1].practica) {
-              k = users[j + 1];
-              users[j + 1] = users[j];
-              users[j] = k;
-            }
+    if (orderBy === 'practica' && orderDirection === 'asc') {
+      for (var i = 1; i < users.length; i++) {
+        for (var j = 0; j < (users.length - i); j++) {
+          if (users[j].practica < users[j + 1].practica) {
+            k = users[j + 1];
+            users[j + 1] = users[j];
+            users[j] = k;
           }
         }
       }
+    }
     
-      showTable(users);  
-    }; 
+    showTable(users);  
+  }; 
 
-    // Filtrado usuarios (buscar, según la barra)
-    window.filtrar = (filtro) => {
-      console.log(filtro);
-      filterUsers(usuarios, filtro);
-    };
+  // Filtrado usuarios (buscar, según la barra)
+  window.filtrar = (filtro) => {
+    console.log(filtro);
+    filterUsers(usuarios, filtro);
+  };
 
-    window.filterUsers = (users, search) => {
-      let usuariosTemporal = [];
-      let usuariosAux = [];
-      for (var i = 0; i < users.length; i++) {
-        usuariosAux.push(users[i]);
-      }
-      let encontrado = false;
-      for (var i = 0; i < users.length; i++) {
-        let usuarioTemporal = users[i];
-        if (usuarioTemporal.nombre.indexOf(search) > -1) {
-          usuariosTemporal.push(usuarioTemporal);
-          encontrado = true;
-        }
-        
-      }
-      usuarios = usuariosAux;
-      if (encontrado) {
-        showTable(usuariosTemporal);
-      } else {
-        showTable(usuarios);
-      }    
-    };
-  });
+  window.filterUsers = (users, search) => {
+    let usuariosTemporal = [];
+    let usuariosAux = [];
+    for (var i = 0; i < users.length; i++) {
+      usuariosAux.push(users[i]);
+    }
+    let encontrado = false;
+    for (var i = 0; i < users.length; i++) {
+      let usuarioTemporal = users[i];
+      if (usuarioTemporal.nombre.indexOf(search) > -1) {
+        usuariosTemporal.push(usuarioTemporal);
+        encontrado = true;
+      }      
+    }
+    usuarios = usuariosAux;
+    if (encontrado) {
+      showTable(usuariosTemporal);
+    } else {
+      showTable(usuarios);
+    }    
+  };
 };
