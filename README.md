@@ -44,6 +44,11 @@ Para desarrollar este producto, realizamos entrevistas, mostramos al usuario ske
 #### 2) Sketch de la solución (prototipo de baja fidelidad)
 
 Este fue el sketch del producto:
+![Sketch 1](scl-2018-05-bc-core-am-datadashboard/src/img/WhatsApp Image 2018-06-24 at 19.43.16.jpeg)
+
+![Sketch 2](scl-2018-05-bc-core-am-datadashboard/src/img/WhatsApp Image 2018-06-24 at 19.44.16.jpeg)
+
+![Sketch 3](scl-2018-05-bc-core-am-datadashboard/src/img/WhatsApp Image 2018-06-24 at 19.45.03.jpeg)
 
 
 #### 3) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
