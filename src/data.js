@@ -4,7 +4,7 @@ window.computeUsersStats = (users, progress) => {
   let cont = 0; // Contador
   // Recorrer a todos los ususarios para obtener sus datos de progreso
   // id conecta usuarios con progreso
-  users.forEach(function(element) {
+  users.forEach(function (element) {
     cont++;
     const progreso = progress[element.id];
     // Variables para guardar cada dato que se necesita mostrar
@@ -30,7 +30,7 @@ window.computeUsersStats = (users, progress) => {
               for (let keyParteFinal in parte) {
                 let parteFinal = parte[keyParteFinal];
                 switch (parteFinal.type) { // switch para contar la completitud de lecturas, ejercicios y quizzes
-                case 'read': 
+                case 'read':
                   if (parteFinal.completed === 1) {
                     lecturaCompletado++;
                   } else {
@@ -65,14 +65,50 @@ window.computeUsersStats = (users, progress) => {
         }
       }
     }
+
+    // Llevamos a porcentaje los datos obtenidos
+    // En caso de no encontrar dato, lo considera 0
+    let lectura = (lecturaCompletado / (lecturaCompletado + lecturaNoCompletado)) * 100;
+    if (isNaN(lectura)) {
+      lectura = 0;
+    }
+    let quiz = (preguntaCompletado / (preguntaCompletado + preguntaNoCompletado)) * 100;
+    if (isNaN(quiz)) {
+      quiz = 0;
+    }
+    let practica = (practicaCompletado / (practicaCompletado + practicaNoCompletado)) * 100;
+    if (isNaN(practica)) {
+      practica = 0;
+      let promedioPuntaje = preguntaPuntaje / contadorPuntaje;
+      if (isNaN(promedioPuntaje)) {
+        promedioPuntaje = 0;
+      }
+
+      let porcentaje = porcentajeProgress(element.id, progress);
+      if (isNaN(porcentaje)) {
+        porcentaje = 0;
+      }
+      // Pusheamos los datos a un objeto que los contiene
+      usuarios.push({
+        lectura: lectura,
+        quiz: quiz,
+        preguntaPuntaje: preguntaPuntaje,
+        promedioPuntaje: promedioPuntaje,
+        practica: practica,
+        nombre: element.name,
+        id: element.id,
+        porcentaje: porcentaje
+      });
+    };
+
+
+    // Función de ordenado
+    window.sortUsers = (users, orderBy, orderDirection) => {
+
+    };
+
+    // Función de búsqueda
+    window.filterUsers = (users, search) => {
+    };
   });
-};
-
-// Función de ordenado
-window.sortUsers = (users, orderBy, orderDirection) => {
-
-};
-
-// Función de búsqueda
-window.filterUsers = (users, search) => {
 };
