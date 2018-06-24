@@ -46,9 +46,9 @@ Para desarrollar este producto, realizamos entrevistas, mostramos al usuario ske
 Este fue el sketch del producto:
 ![Sketch 1](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.43.16.jpeg)
 
-![Sketch 2](scl-2018-05-bc-core-am-datadashboard/src/img/WhatsApp Image 2018-06-24 at 19.44.16.jpeg)
+![Sketch 2](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.44.16.jpeg)
 
-![Sketch 3](scl-2018-05-bc-core-am-datadashboard/src/img/WhatsApp Image 2018-06-24 at 19.45.03.jpeg)
+![Sketch 3](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.45.03.jpeg)
 
 
 #### 3) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
