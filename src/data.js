@@ -1,8 +1,8 @@
 
 let usuarios = [];
 window.computeUsersStats = (users, progress) => {
-  // let tabla = ''; // Tabla para mostrar los datos
-  // let cont = 0; // Contador
+  let tabla = ''; // Tabla para mostrar los datos
+  let cont = 0; // Contador
   // Recorrer a todos los ususarios para obtener sus datos de progreso
   // id conecta usuarios con progreso
   users.forEach(function(element) {
@@ -131,7 +131,7 @@ window.computeUsersStats = (users, progress) => {
     } catch (err) {
       return 0;
     }
-  }
+  };
 
   // Función de ordenado
   window.ordenar = (tipo, direccion) => {
