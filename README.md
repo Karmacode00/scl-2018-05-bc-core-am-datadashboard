@@ -55,31 +55,9 @@ Este fue el sketch del producto:
 
 Prototipo realizado en Figma:
 
+![Figma 1](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.43.jpeg)
 
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+![Figma 2](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.51.jpeg)
 
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-has diseñado. Tendrás un tiempo limitado para hackear, así que deberás priorizar.
-
-Sin embargo, como mínimo, tu implementación debe:
-
-1. Permitir al usuario seleccionar un cohort de una lista de cohorts.
-2. Al seleccionar un cohort:
-   - Listar las alumnas de ese cohort
-   - Para cada alumna:
-     + Calcular porcentaje de completitud de todos los _cursos_.
-     + Calcular grado de completitud de _lecturas_, _ejercicios autocorregidos_,
-       y _quizzes_.
-   - Ordenar alumnas por completitud _general_ (porcentaje consumido/completado
-     de todos los cursos del cohort en cuestión), de _lecturas_, _ejercicios
-     autocorregidos_ y _quizzes_.
-   - Filtrar/buscar alumnas por nombre.
-3. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
-4. Incluir pruebas unitarias.
-
-Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
-igual debe seguir los fundamentos de visual design, como: contraste,
-alineación, jerarquía, entre otros.
+![Figma 3](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.15.jpeg)
 
