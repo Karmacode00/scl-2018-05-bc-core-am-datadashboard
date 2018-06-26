@@ -117,11 +117,12 @@ window.computeUsersStats = (users, progress) => {
     let tabla = '';
     for (var i = 0; i < usuarios.length; i++) {
       let usuarioTemporal = usuarios[i];
-      tabla += '<tr><td>' + (i + 1) + '</td><td>' + usuarioTemporal.nombre + '</td><td>' + usuarioTemporal.porcentaje + '%</td><td>%' + Math.round(usuarioTemporal.lectura) + '</td><td>%' + Math.round(usuarioTemporal.quiz) + '</td><td>%' + Math.round(usuarioTemporal.practica) + '</td><td>' + Math.round(usuarioTemporal.promedioPuntaje) + '</td></tr>';
+      tabla += '<tr><td>' + (i + 1) + '</td><td>' + usuarioTemporal.nombre + '</td><td>' + usuarioTemporal.porcentaje + '%</td><td>%' + Math.round(usuarioTemporal.lectura) + '%</td><td>%' + Math.round(usuarioTemporal.quiz) + '%</td><td>%' + Math.round(usuarioTemporal.practica) + '%</td><td>' + Math.round(usuarioTemporal.promedioPuntaje) + '</td></tr>';
     }
     document.getElementById('alumnas').innerHTML = tabla;
   };
   
+  // Si no hay porcentaje que de cero
   window.porcentajeProgress = (id, progress) => {
     try {
       let progressObj = progress[id];
