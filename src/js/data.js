@@ -25,7 +25,6 @@ window.computeUsersStats = (users, progress) => {
         for (let keyUnidad in preUnidad) {
           let unidad = preUnidad[keyUnidad];
           for (let keyParte in unidad) {
-            if (keyParte === 'parts') {
               let parte = unidad[keyParte];
               for (let keyParteFinal in parte) {
                 let parteFinal = parte[keyParteFinal];
@@ -61,7 +60,7 @@ window.computeUsersStats = (users, progress) => {
                 }
               }
             }
-          }
+          
         }
       }
     }
