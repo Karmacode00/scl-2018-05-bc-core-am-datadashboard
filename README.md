@@ -1,4 +1,8 @@
-# Data Dashboard
+﻿# Data Dashboard
+
+## ¿Cómo colaboramos?
+
+Para este proyecto trabajamos colaborando en sesiones mediante Live Share de Visual Studio Code, por lo que escribimos código, comentamos y nos comunicamos en tiempo real, resultando en menos pull request y también menos problemas al hacer merge de pull request.
 
 ## Introducción
 
@@ -46,16 +50,16 @@ Para desarrollar este producto, realizamos entrevistas, mostramos al usuario ske
 Este fue el sketch del producto:
 ![Sketch 1](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.43.16.jpeg)
 
-![Sketch 2](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.44.16.jpeg)
+![Sketch 2](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_2_todas%20las%20alumnas.jpeg)
 
-![Sketch 3](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.45.03.jpeg)
+![Sketch 3](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_3_Alumna%20especifica.jpeg)
 
 
 #### 3) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
 
 Prototipo realizado en Figma:
 
-![Figma 1](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.43.jpeg)
+![Figma 1](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_1_index.jpeg)
 
 ![Figma 2](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.51.jpeg)
 
