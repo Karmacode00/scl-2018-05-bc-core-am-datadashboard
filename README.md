@@ -48,7 +48,7 @@ Para desarrollar este producto, realizamos entrevistas, mostramos al usuario ske
 #### 2) Sketch de la solución (prototipo de baja fidelidad)
 
 Este fue el sketch del producto:
-![Sketch 1](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.43.16.jpeg)
+![Sketch 1](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_1_index.jpeg)
 
 ![Sketch 2](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_2_todas%20las%20alumnas.jpeg)
 
@@ -59,7 +59,7 @@ Este fue el sketch del producto:
 
 Prototipo realizado en Figma:
 
-![Figma 1](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_1_index.jpeg)
+![Figma 1](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.43.jpeg)
 
 ![Figma 2](https://raw.githubusercontent.com/Karmacode00/scl-2018-05-bc-core-am-datadashboard/master/src/img/WhatsApp%20Image%202018-06-24%20at%2019.57.51.jpeg)
 
