@@ -45,7 +45,41 @@ Este dashboard le permite visualizar de manera más amigable y clara, datos que 
 
 Para desarrollar este producto, realizamos entrevistas, mostramos al usuario sketchs y prototipos, al fin de avanzar en la dirección correcta.
 
-#### 2) Sketch de la solución (prototipo de baja fidelidad)
+#### 2) Entrevista con el usuario
+
+Para llegar a la definición del producto señalada en el punto anterior, se realizó una entrevista con Valentina Smith, TM de Santiago, quien es la principal usuaria del producto que creamos.
+Algunas de las preguntas que le hicimos para definir mejor el producto fueron:
+
+- ¿Cómo visualizas actualmente los datos entregados por el LMS (y otros datos de interés)?
+ Actualmente los visualizo en una plantilla Excel, al igual que muchos otros datos que maneja Laboratoria.
+
+- ¿Qué es lo que te gustaría que esta aplicación mejorara de esa visualización?
+ Me gustaría que fuese más amigable, que los datos se vean más claros.
+
+- ¿Aparte de ti, alguien más tiene acceso a estos datos?
+ A estos datos accedo principalmente yo, otros superiores (no se especifica), y para otras sedes son los respectivos TMs.
+
+Además, otras preguntas importantes para definir el producto son:
+
+- ¿Quiénes son los principales usarios de producto?
+ TMs de cada sede. En el caso de la sede de Santiago, la principal usuaria es Valentina Smith.
+
+- ¿Cuáles son los objetivos de estos usarios en relación con el producto?
+ Visualizar de forma amigable y rápida los datos de las alumnas (progresos, nombres, etc)
+
+- ¿Cuáles son los datos más relevantes que el usuario quiere ver en la interfaz y por qué. Cómo los descubriste?
+ Mediante la entrevista, Valentina pudo señalar que los datos importantes son el progreso general, y los progresos de cada unidad, así como también poder ver el estado de completitud de las actividades.
+
+- ¿Cuándo revisa normalmente estos datos?
+ Tanto a diario, como cada semana para la reunión con los demás TMs.
+
+- ¿Cómo crees que el producto les está resolviendo sus problemas?
+ El producto le permite visualizar los datos que le interesan, de una manera más cómoda y amigable.
+
+- ¿Cómo fue tu proceso de diseño?
+ En primer lugar fue entrevistar a la usuaria, entender cómo era el producto que actualmente usa, qué cosas le gustaría que se vieran o fueran diferentes, luego presentar un sketch, un prototipo, así como el respectivo feedback de cada etapa, hasta tener un producto funcional que fuese cumpliendo con lo que íbamos aprendiendo en el proceso.
+
+#### 3) Sketch de la solución (prototipo de baja fidelidad)
 
 Este fue el sketch del producto:
 ![Sketch 1](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_1_index.jpeg)
@@ -55,7 +89,7 @@ Este fue el sketch del producto:
 ![Sketch 3](https://raw.githubusercontent.com/jotaparra/scl-2018-05-bc-core-am-datadashboard/master/src/img/sketch_3_Alumna%20especifica.jpeg)
 
 
-#### 3) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
+#### 4) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
 
 Prototipo realizado en Figma:
 
