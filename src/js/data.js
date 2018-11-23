@@ -25,42 +25,41 @@ window.computeUsersStats = (users, progress) => {
         for (let keyUnidad in preUnidad) {
           let unidad = preUnidad[keyUnidad];
           for (let keyParte in unidad) {
-              let parte = unidad[keyParte];
-              for (let keyParteFinal in parte) {
-                let parteFinal = parte[keyParteFinal];
-                switch (parteFinal.type) { // switch para contar la completitud de lecturas, ejercicios y quizzes
-                  case 'read':
-                    if (parteFinal.completed === 1) {
-                      lecturaCompletado++;
-                    } else {
-                      lecturaNoCompletado++;
-                    }
-                    break;
-                  case 'quiz':
-                    if (parteFinal.completed === 1) {
-                      preguntaCompletado++;
-                    } else {
-                      preguntaNoCompletado++;
-                    }
-                    if (parteFinal.score === undefined) {
-                      parteFinal.score = 0;
-                    }
-                    preguntaPuntaje += parteFinal.score;
-                    contadorPuntaje++;
-                    break;
-                  case 'practice':
-                    if (parteFinal.completed === 1) {
-                      practicaCompletado++;
-                    } else {
-                      practicaNoCompletado++;
-                    }
-                    break;
-                  default:
-                  // console.log('holi');
-                }
+            let parte = unidad[keyParte];
+            for (let keyParteFinal in parte) {
+              let parteFinal = parte[keyParteFinal];
+              switch (parteFinal.type) { // switch para contar la completitud de lecturas, ejercicios y quizzes
+                case 'read':
+                  if (parteFinal.completed === 1) {
+                    lecturaCompletado++;
+                  } else {
+                    lecturaNoCompletado++;
+                  }
+                  break;
+                case 'quiz':
+                  if (parteFinal.completed === 1) {
+                    preguntaCompletado++;
+                  } else {
+                    preguntaNoCompletado++;
+                  }
+                  if (parteFinal.score === undefined) {
+                    parteFinal.score = 0;
+                  }
+                  preguntaPuntaje += parteFinal.score;
+                  contadorPuntaje++;
+                  break;
+                case 'practice':
+                  if (parteFinal.completed === 1) {
+                    practicaCompletado++;
+                  } else {
+                    practicaNoCompletado++;
+                  }
+                  break;
+                default:
+                // console.log('holi');
               }
             }
-          
+          }
         }
       }
     }
