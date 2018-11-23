@@ -36,4 +36,3 @@ function seleccionarCohorts() { // Inicio progress (progreso)
       // Terminado usuarios
     });
 }
-

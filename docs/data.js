@@ -64,7 +64,7 @@ window.computeUsersStats = (users, progress) => {
           }
         }
       }
-    }
+    };
 
     // Llevamos a porcentaje los datos obtenidos
     // En caso de no encontrar dato, lo considera 0
@@ -133,9 +133,9 @@ window.computeUsersStats = (users, progress) => {
   };
 
   // Función de ordenado
-  window.ordenar = (tipo, direccion) => {
-    sortUsers(usuarios, tipo, direccion);
-  };
+  // window.ordenar = (tipo, direccion) => {
+  //   sortUsers(usuarios, tipo, direccion);
+  // };
 
   // Ordenamos con metodo burbuja (bubble sort o bubbling event)
   // Forma de ordenar sacada de internet, mueve los datos 
@@ -193,10 +193,10 @@ window.computeUsersStats = (users, progress) => {
   }; 
 
   // Filtrado usuarios (buscar, según la barra)
-  window.filtrar = (filtro) => {
-    console.log(filtro);
-    filterUsers(usuarios, filtro);
-  };
+  // window.filtrar = (filtro) => {
+  // console.log(filtro);
+  // filterUsers(usuarios, filtro);
+  // };
 
   window.filterUsers = (users, search) => {
     let usuariosTemporal = [];
@@ -219,4 +219,4 @@ window.computeUsersStats = (users, progress) => {
       showTable(usuarios);
     }    
   };
-}
+};
