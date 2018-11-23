@@ -56,6 +56,7 @@ window.computeUsersStats = (users, progress) => {
                 }
                 break;
               default:
+
                 // console.log('holi');
               }
             }
